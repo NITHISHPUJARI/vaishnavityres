@@ -1,38 +1,67 @@
-.App {
+/* .App {
+  text-align: center;
+} */
+body{
+  font-family: "Times New Roman", Times, serif;
+  overflow-x: hidden;
+}
+#top {
+  position: sticky;
+  top: 0;
+}
+#menu{
+  padding-top: 8px;
+}
+#title{
+  padding-top: 4px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#menus{
+  text-decoration: none;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* home */
+.head-text {
+  position: relative;
+}
+#heading{
+  font-size: 5em;
+}
+.text-on-image {
+ position: absolute;
+ right: 10%;
+ left: 10%;
+ bottom: 5%;
+}
+/* about */
+#about-text{
+  background-color: #ededed;
+  text-align: justify;
+  padding: 10%;
+  font-size: 1.2em;
+}
+/* contact */
+article p{
+  font-size: 1.2em;
+}
+
+/* footer */
+footer{
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  #heading{
+    font-size: 3em;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  #menu{
+    padding-top: 1px;
   }
-  to {
-    transform: rotate(360deg);
+  #title{
+    padding-top: 4px;
+    font-size: 1.6rem;
+  }
+  #about-text{
+    font-size: 1em;
   }
 }
